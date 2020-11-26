@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     # C-VAE
     model = CVAE(data_manager, device, epochs=10)
-    # model.fit()
+    model.fit()
 
     # Single Sample
     model.load_model('cvae_state.pt')
